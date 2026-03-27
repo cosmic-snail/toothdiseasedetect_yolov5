@@ -35,6 +35,18 @@ def allowed_file(filename):
 app = Flask(__name__)
 # app.send_file_max_age_default = timedelta(seconds=1)
 
+# 如果检测牙齿失败，则调整亮度重试
+def detect_tooth_with_retry(image_dir, target_dir):
+    res = predict.mobilenetv3(img_path=image_dir)
+    if res[0] != 1:
+        logging.warning("图片未识别到牙齿,调整亮度重试") 
+        lsu.lightness_saturation(target_dir, target_dir)
+        res = predict.mobilenetv3(img_path=image_dir)
+    return res
+    
+
+
+
 # 用户选择照片的报告接口
 @app.route('/api/reports', methods=['POST'])
 def reports():
@@ -53,10 +65,9 @@ def reports():
 
                 image_dir = os.path.join(target_dir,'{}.jpg'.format(id))
                 torch.hub.download_url_to_file(url, image_dir)
-                lsu.lightness_saturation(target_dir, target_dir)
                 with torch.no_grad():
                     try:
-                        res = predict.mobilenetv3(img_path=image_dir)
+                        res = detect_tooth_with_retry(image_dir, target_dir)
                         if res[0] == 1:
                             info = yolov5.detect(source=image_dir)
                             # print(info)
