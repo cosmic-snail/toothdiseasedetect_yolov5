@@ -1,0 +1,164 @@
+2022-07-27 15:26:17,923 _internal.py [line:224] _log [INFO]  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-07-28 17:08:47,478 torch_utils.py [line:84] select_device [INFO] YOLOv5 🚀 2022-7-13 Python-3.8.12 torch-1.11.0+cu102 CUDA:0 (Tesla P100-PCIE-16GB, 16281MiB)
+
+2022-07-28 17:08:49,422 yolo.py [line:228] fuse [INFO] Fusing layers... 
+2022-07-28 17:08:49,580 torch_utils.py [line:239] model_info [INFO] YOLOv5m summary: 290 layers, 20865057 parameters, 0 gradients
+2022-07-28 17:08:49,727 torch_utils.py [line:84] select_device [INFO] YOLOv5 🚀 2022-7-13 Python-3.8.12 torch-1.11.0+cu102 CUDA:0 (Tesla P100-PCIE-16GB, 16281MiB)
+
+2022-07-28 17:08:49,803 yolo.py [line:228] fuse [INFO] Fusing layers... 
+2022-07-28 17:08:49,960 torch_utils.py [line:239] model_info [INFO] YOLOv5m summary: 290 layers, 20865057 parameters, 0 gradients
+2022-07-28 17:27:25,634 torch_utils.py [line:84] select_device [INFO] YOLOv5 🚀 2022-7-13 Python-3.8.12 torch-1.11.0+cu102 CUDA:0 (Tesla P100-PCIE-16GB, 16281MiB)
+                                                     CUDA:1 (Tesla P100-PCIE-16GB, 16281MiB)
+
+2022-07-28 17:27:27,534 yolo.py [line:228] fuse [INFO] Fusing layers... 
+2022-07-28 17:27:27,693 torch_utils.py [line:239] model_info [INFO] YOLOv5m summary: 290 layers, 20865057 parameters, 0 gradients
+2022-07-28 17:27:27,841 torch_utils.py [line:84] select_device [INFO] YOLOv5 🚀 2022-7-13 Python-3.8.12 torch-1.11.0+cu102 CUDA:0 (Tesla P100-PCIE-16GB, 16281MiB)
+                                                     CUDA:1 (Tesla P100-PCIE-16GB, 16281MiB)
+
+2022-07-28 17:27:27,918 yolo.py [line:228] fuse [INFO] Fusing layers... 
+2022-07-28 17:27:28,074 torch_utils.py [line:239] model_info [INFO] YOLOv5m summary: 290 layers, 20865057 parameters, 0 gradients
+2022-07-28 17:34:18,333 torch_utils.py [line:84] select_device [INFO] YOLOv5 🚀 2022-7-13 Python-3.8.12 torch-1.11.0+cu102 CUDA:0 (Tesla P100-PCIE-16GB, 16281MiB)
+                                                     CUDA:1 (Tesla P100-PCIE-16GB, 16281MiB)
+
+2022-07-28 17:34:20,228 yolo.py [line:228] fuse [INFO] Fusing layers... 
+2022-07-28 17:34:20,380 torch_utils.py [line:239] model_info [INFO] YOLOv5m summary: 290 layers, 20865057 parameters, 0 gradients
+2022-07-28 17:34:20,526 torch_utils.py [line:84] select_device [INFO] YOLOv5 🚀 2022-7-13 Python-3.8.12 torch-1.11.0+cu102 CUDA:0 (Tesla P100-PCIE-16GB, 16281MiB)
+                                                     CUDA:1 (Tesla P100-PCIE-16GB, 16281MiB)
+
+2022-07-28 17:34:20,601 yolo.py [line:228] fuse [INFO] Fusing layers... 
+2022-07-28 17:34:20,747 torch_utils.py [line:239] model_info [INFO] YOLOv5m summary: 290 layers, 20865057 parameters, 0 gradients
+2022-07-28 17:34:20,878 torch_utils.py [line:84] select_device [INFO] YOLOv5 🚀 2022-7-13 Python-3.8.12 torch-1.11.0+cu102 CUDA:0 (Tesla P100-PCIE-16GB, 16281MiB)
+                                                     CUDA:1 (Tesla P100-PCIE-16GB, 16281MiB)
+
+2022-07-28 17:34:20,954 yolo.py [line:228] fuse [INFO] Fusing layers... 
+2022-07-28 17:34:21,111 torch_utils.py [line:239] model_info [INFO] YOLOv5m summary: 290 layers, 20865057 parameters, 0 gradients
+2022-07-28 17:34:21,254 torch_utils.py [line:84] select_device [INFO] YOLOv5 🚀 2022-7-13 Python-3.8.12 torch-1.11.0+cu102 CUDA:0 (Tesla P100-PCIE-16GB, 16281MiB)
+                                                     CUDA:1 (Tesla P100-PCIE-16GB, 16281MiB)
+
+2022-07-28 17:34:21,330 yolo.py [line:228] fuse [INFO] Fusing layers... 
+2022-07-28 17:34:21,498 torch_utils.py [line:239] model_info [INFO] YOLOv5m summary: 290 layers, 20865057 parameters, 0 gradients
+2022-07-28 17:34:21,630 torch_utils.py [line:84] select_device [INFO] YOLOv5 🚀 2022-7-13 Python-3.8.12 torch-1.11.0+cu102 CUDA:0 (Tesla P100-PCIE-16GB, 16281MiB)
+                                                     CUDA:1 (Tesla P100-PCIE-16GB, 16281MiB)
+
+2022-07-28 17:34:21,712 yolo.py [line:228] fuse [INFO] Fusing layers... 
+2022-07-28 17:34:21,859 torch_utils.py [line:239] model_info [INFO] YOLOv5m summary: 290 layers, 20865057 parameters, 0 gradients
+2022-07-28 17:34:22,002 torch_utils.py [line:84] select_device [INFO] YOLOv5 🚀 2022-7-13 Python-3.8.12 torch-1.11.0+cu102 CUDA:0 (Tesla P100-PCIE-16GB, 16281MiB)
+                                                     CUDA:1 (Tesla P100-PCIE-16GB, 16281MiB)
+
+2022-07-28 17:34:22,083 yolo.py [line:228] fuse [INFO] Fusing layers... 
+2022-07-28 17:34:22,228 torch_utils.py [line:239] model_info [INFO] YOLOv5m summary: 290 layers, 20865057 parameters, 0 gradients
+2022-07-28 17:34:22,359 torch_utils.py [line:84] select_device [INFO] YOLOv5 🚀 2022-7-13 Python-3.8.12 torch-1.11.0+cu102 CUDA:0 (Tesla P100-PCIE-16GB, 16281MiB)
+                                                     CUDA:1 (Tesla P100-PCIE-16GB, 16281MiB)
+
+2022-07-28 17:34:22,437 yolo.py [line:228] fuse [INFO] Fusing layers... 
+2022-07-28 17:34:22,588 torch_utils.py [line:239] model_info [INFO] YOLOv5m summary: 290 layers, 20865057 parameters, 0 gradients
+2022-07-28 17:34:22,748 torch_utils.py [line:84] select_device [INFO] YOLOv5 🚀 2022-7-13 Python-3.8.12 torch-1.11.0+cu102 CUDA:0 (Tesla P100-PCIE-16GB, 16281MiB)
+                                                     CUDA:1 (Tesla P100-PCIE-16GB, 16281MiB)
+
+2022-07-28 17:34:22,819 yolo.py [line:228] fuse [INFO] Fusing layers... 
+2022-07-28 17:34:22,964 torch_utils.py [line:239] model_info [INFO] YOLOv5m summary: 290 layers, 20865057 parameters, 0 gradients
+2022-07-28 17:34:23,094 torch_utils.py [line:84] select_device [INFO] YOLOv5 🚀 2022-7-13 Python-3.8.12 torch-1.11.0+cu102 CUDA:0 (Tesla P100-PCIE-16GB, 16281MiB)
+                                                     CUDA:1 (Tesla P100-PCIE-16GB, 16281MiB)
+
+2022-07-28 17:34:23,165 yolo.py [line:228] fuse [INFO] Fusing layers... 
+2022-07-28 17:34:23,309 torch_utils.py [line:239] model_info [INFO] YOLOv5m summary: 290 layers, 20865057 parameters, 0 gradients
+2022-07-28 17:37:43,644 torch_utils.py [line:84] select_device [INFO] YOLOv5 🚀 2022-7-13 Python-3.8.12 torch-1.11.0+cu102 CUDA:0 (Tesla P100-PCIE-16GB, 16281MiB)
+                                                     CUDA:1 (Tesla P100-PCIE-16GB, 16281MiB)
+
+2022-07-28 17:37:43,728 yolo.py [line:228] fuse [INFO] Fusing layers... 
+2022-07-28 17:37:43,885 torch_utils.py [line:239] model_info [INFO] YOLOv5m summary: 290 layers, 20865057 parameters, 0 gradients
+2022-07-28 17:37:44,028 torch_utils.py [line:84] select_device [INFO] YOLOv5 🚀 2022-7-13 Python-3.8.12 torch-1.11.0+cu102 CUDA:0 (Tesla P100-PCIE-16GB, 16281MiB)
+                                                     CUDA:1 (Tesla P100-PCIE-16GB, 16281MiB)
+
+2022-07-28 17:37:44,101 yolo.py [line:228] fuse [INFO] Fusing layers... 
+2022-07-28 17:37:44,253 torch_utils.py [line:239] model_info [INFO] YOLOv5m summary: 290 layers, 20865057 parameters, 0 gradients
+2022-07-28 17:37:44,382 torch_utils.py [line:84] select_device [INFO] YOLOv5 🚀 2022-7-13 Python-3.8.12 torch-1.11.0+cu102 CUDA:0 (Tesla P100-PCIE-16GB, 16281MiB)
+                                                     CUDA:1 (Tesla P100-PCIE-16GB, 16281MiB)
+
+2022-07-28 17:37:44,458 yolo.py [line:228] fuse [INFO] Fusing layers... 
+2022-07-28 17:37:44,610 torch_utils.py [line:239] model_info [INFO] YOLOv5m summary: 290 layers, 20865057 parameters, 0 gradients
+2022-07-28 17:37:44,753 torch_utils.py [line:84] select_device [INFO] YOLOv5 🚀 2022-7-13 Python-3.8.12 torch-1.11.0+cu102 CUDA:0 (Tesla P100-PCIE-16GB, 16281MiB)
+                                                     CUDA:1 (Tesla P100-PCIE-16GB, 16281MiB)
+
+2022-07-28 17:37:44,826 yolo.py [line:228] fuse [INFO] Fusing layers... 
+2022-07-28 17:37:44,979 torch_utils.py [line:239] model_info [INFO] YOLOv5m summary: 290 layers, 20865057 parameters, 0 gradients
+2022-07-28 17:37:45,108 torch_utils.py [line:84] select_device [INFO] YOLOv5 🚀 2022-7-13 Python-3.8.12 torch-1.11.0+cu102 CUDA:0 (Tesla P100-PCIE-16GB, 16281MiB)
+                                                     CUDA:1 (Tesla P100-PCIE-16GB, 16281MiB)
+
+2022-07-28 17:37:45,182 yolo.py [line:228] fuse [INFO] Fusing layers... 
+2022-07-28 17:37:45,336 torch_utils.py [line:239] model_info [INFO] YOLOv5m summary: 290 layers, 20865057 parameters, 0 gradients
+2022-07-28 17:37:45,478 torch_utils.py [line:84] select_device [INFO] YOLOv5 🚀 2022-7-13 Python-3.8.12 torch-1.11.0+cu102 CUDA:0 (Tesla P100-PCIE-16GB, 16281MiB)
+                                                     CUDA:1 (Tesla P100-PCIE-16GB, 16281MiB)
+
+2022-07-28 17:37:45,554 yolo.py [line:228] fuse [INFO] Fusing layers... 
+2022-07-28 17:37:45,710 torch_utils.py [line:239] model_info [INFO] YOLOv5m summary: 290 layers, 20865057 parameters, 0 gradients
+2022-07-28 17:37:45,841 torch_utils.py [line:84] select_device [INFO] YOLOv5 🚀 2022-7-13 Python-3.8.12 torch-1.11.0+cu102 CUDA:0 (Tesla P100-PCIE-16GB, 16281MiB)
+                                                     CUDA:1 (Tesla P100-PCIE-16GB, 16281MiB)
+
+2022-07-28 17:37:45,912 yolo.py [line:228] fuse [INFO] Fusing layers... 
+2022-07-28 17:37:46,067 torch_utils.py [line:239] model_info [INFO] YOLOv5m summary: 290 layers, 20865057 parameters, 0 gradients
+2022-07-28 17:37:46,208 torch_utils.py [line:84] select_device [INFO] YOLOv5 🚀 2022-7-13 Python-3.8.12 torch-1.11.0+cu102 CUDA:0 (Tesla P100-PCIE-16GB, 16281MiB)
+                                                     CUDA:1 (Tesla P100-PCIE-16GB, 16281MiB)
+
+2022-07-28 17:37:46,282 yolo.py [line:228] fuse [INFO] Fusing layers... 
+2022-07-28 17:37:46,443 torch_utils.py [line:239] model_info [INFO] YOLOv5m summary: 290 layers, 20865057 parameters, 0 gradients
+2022-07-28 17:37:46,578 torch_utils.py [line:84] select_device [INFO] YOLOv5 🚀 2022-7-13 Python-3.8.12 torch-1.11.0+cu102 CUDA:0 (Tesla P100-PCIE-16GB, 16281MiB)
+                                                     CUDA:1 (Tesla P100-PCIE-16GB, 16281MiB)
+
+2022-07-28 17:37:46,764 yolo.py [line:228] fuse [INFO] Fusing layers... 
+2022-07-28 17:37:46,917 torch_utils.py [line:239] model_info [INFO] YOLOv5m summary: 290 layers, 20865057 parameters, 0 gradients
+2022-07-28 17:38:27,122 server.py [line:44] reports [INFO] 输入参数不正确图片id:None图片地址:https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_bt%2F0%2F13619934054%2F1000.jpg&refer=http%3A%2F%2Finews.gtimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1659601382&t=0fdb60c89c255bd88205a334061f69e7
+2022-07-29 10:41:44,328 app.py [line:1449] log_exception [ERROR] Exception on /api/asyncReports [POST]
+Traceback (most recent call last):
+  File "/home/rootroot/hystooth_flask/./server.py", line 112, in async_reports
+    task = async_task.apply_async(args=[body])
+  File "/home/rootroot/miniconda3/envs/hystooth_flask/lib/python3.8/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/home/rootroot/miniconda3/envs/hystooth_flask/lib/python3.8/site-packages/celery/app/base.py", line 784, in send_task
+    with self.producer_or_acquire(producer) as P:
+  File "/home/rootroot/miniconda3/envs/hystooth_flask/lib/python3.8/site-packages/celery/app/base.py", line 919, in producer_or_acquire
+    producer, self.producer_pool.acquire, block=True,
+  File "/home/rootroot/miniconda3/envs/hystooth_flask/lib/python3.8/site-packages/celery/app/base.py", line 1303, in producer_pool
+    return self.amqp.producer_pool
+  File "/home/rootroot/miniconda3/envs/hystooth_flask/lib/python3.8/site-packages/celery/app/amqp.py", line 583, in producer_pool
+    self.app.connection_for_write()]
+  File "/home/rootroot/miniconda3/envs/hystooth_flask/lib/python3.8/site-packages/celery/app/base.py", line 816, in connection_for_write
+    return self._connection(url or self.conf.broker_write_url, **kwargs)
+  File "/home/rootroot/miniconda3/envs/hystooth_flask/lib/python3.8/site-packages/celery/app/base.py", line 867, in _connection
+    return self.amqp.Connection(
+  File "/home/rootroot/miniconda3/envs/hystooth_flask/lib/python3.8/site-packages/kombu/connection.py", line 181, in __init__
+    if not get_transport_cls(transport).can_parse_url:
+  File "/home/rootroot/miniconda3/envs/hystooth_flask/lib/python3.8/site-packages/kombu/transport/__init__.py", line 85, in get_transport_cls
+    _transport_cache[transport] = resolve_transport(transport)
+  File "/home/rootroot/miniconda3/envs/hystooth_flask/lib/python3.8/site-packages/kombu/transport/__init__.py", line 70, in resolve_transport
+    return symbol_by_name(transport)
+  File "/home/rootroot/miniconda3/envs/hystooth_flask/lib/python3.8/site-packages/kombu/utils/imports.py", line 56, in symbol_by_name
+    module = imp(module_name, package=package, **kwargs)
+  File "/home/rootroot/miniconda3/envs/hystooth_flask/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rootroot/miniconda3/envs/hystooth_flask/lib/python3.8/site-packages/kombu/transport/redis.py", line 262, in <module>
+    class PrefixedStrictRedis(GlobalKeyPrefixMixin, redis.Redis):
+AttributeError: 'NoneType' object has no attribute 'Redis'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rootroot/miniconda3/envs/hystooth_flask/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/rootroot/miniconda3/envs/hystooth_flask/lib/python3.8/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/rootroot/miniconda3/envs/hystooth_flask/lib/python3.8/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/rootroot/miniconda3/envs/hystooth_flask/lib/python3.8/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/rootroot/hystooth_flask/./server.py", line 114, in async_reports
+    logging.error("异步任务调用失败！"+ e)
+TypeError: can only concatenate str (not "AttributeError") to str
+2022-07-29 10:54:05,799 server.py [line:114] async_reports [ERROR] 异步任务调用失败！'NoneType' object has no attribute 'Redis'
+
