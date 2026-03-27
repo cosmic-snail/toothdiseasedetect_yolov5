@@ -34,18 +34,35 @@ def allowed_file(filename):
 
 app = Flask(__name__)
 # app.send_file_max_age_default = timedelta(seconds=1)
+g_lightness_values = [-40, -20, 0, 20, 40, 60, 80, 100]
+g_saturation = 100
 
-# 如果检测牙齿失败，则调整亮度重试
+# 如果未检测出病种，则调整亮度重试，直到检测出病种或重试结束
 def detect_tooth_with_retry(image_dir, target_dir):
-    res = predict.mobilenetv3(img_path=image_dir)
-    if res[0] != 1:
-        logging.warning("图片未识别到牙齿,调整亮度重试") 
-        lsu.lightness_saturation(target_dir, target_dir)
-        res = predict.mobilenetv3(img_path=image_dir)
-    return res
-    
+    final_res = predict.mobilenetv3(img_path=image_dir)
 
+    try:
+        info = yolov5.detect(source=image_dir)
+        if isinstance(info, list) and len(info) > 1 and info[0] == 4:
+            return info
+    except Exception as e:
+        logging.warning("YOLO检测失败:%s", e)
 
+    base_name = os.path.splitext(os.path.basename(image_dir))[0]
+    for l in g_lightness_values:
+        try:
+            variant = os.path.join(target_dir, f"{base_name}_L{l}.jpg")
+            lsu.update(image_dir, variant, lightness=l, saturation=g_saturation)
+
+            final_res = predict.mobilenetv3(img_path=variant)
+            info = yolov5.detect(source=variant)
+            if isinstance(info, list) and len(info) > 1 and info[0] == 4:
+                return info
+        except Exception as e:
+            logging.warning("亮度重试失败:%s", e)
+            continue
+
+    return final_res
 
 # 用户选择照片的报告接口
 @app.route('/api/reports', methods=['POST'])
@@ -67,12 +84,7 @@ def reports():
                 torch.hub.download_url_to_file(url, image_dir)
                 with torch.no_grad():
                     try:
-                        res = detect_tooth_with_retry(image_dir, target_dir)
-                        if res[0] == 1:
-                            info = yolov5.detect(source=image_dir)
-                            # print(info)
-                        else:
-                            info = res
+                        info = detect_tooth_with_retry(image_dir, target_dir)
                     except Exception as e:
                         image_dict = {"id":id, "results":"3","diseases":[]}
                         logging.error("图片id:"+str(id)+"图片地址:"+str(url)+"图片解析失败:" + str(e))
@@ -156,15 +168,9 @@ def async_task(request_body):
             url = row["url"]
             image_dir = os.path.join(target_dir,'{}.jpg'.format(id))
             torch.hub.download_url_to_file(url, image_dir)
-            lsu.lightness_saturation(target_dir, target_dir)
             with torch.no_grad():
                 try:
-                    res = predict.mobilenetv3(img_path=image_dir)
-                    if res[0] == 1:
-                        info = yolov5.detect(source=image_dir)
-                        # print(info)
-                    else:
-                        info = res
+                    info = detect_tooth_with_retry(image_dir, target_dir)
                 except Exception as e:
                     image_dict = {"id":id, "results":"3","diseases":[]}
                     logging.error("图片id:"+str(id)+"图片地址:"+str(url)+"图片解析失败:" + str(e))

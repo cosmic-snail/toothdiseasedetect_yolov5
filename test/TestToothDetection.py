@@ -9,7 +9,7 @@ if str(ROOT) not in sys.path:
 from mobilenetv3 import predict
 import yolov5
 
-img = "test/test1.jpg"
+img = "test/test2.jpg"
 
 res = predict.mobilenetv3(img_path=img)
 print("mobilenet结果:", res)

@@ -1,21 +1,29 @@
-import os, tempfile, shutil
+import os
+import tempfile
+import shutil
+
 from mobilenetv3 import predict
 import yolov5
 import lightness_saturation_using as lsu
 
-src = "/home/rootroot/hystooth_flask/test/test.jpg"
+src = "/home/rootroot/hystooth_flask/test/test3.jpg"
+lightness_values = [-40, -20, 0, 20, 40, 60, 80, 100]
+saturation = 0
 
 with tempfile.TemporaryDirectory() as d:
-    img = os.path.join(d, "test.jpg")
-    shutil.copy(src, img)
+    original = os.path.join(d, "original.jpg")
+    shutil.copy(src, original)
 
-    # lsu.lightness_saturation(d, d)
+    for l in lightness_values:
+        img = os.path.join(d, f"L{l}_S{saturation}.jpg")
+        lsu.update(original, img, lightness=l, saturation=saturation)
 
-    res = predict.mobilenetv3(img_path=img)
-    print("接口同款 mobilenet结果:", res)
-
-    if res[0] == 1:
+        res = predict.mobilenetv3(img_path=img)
+        status = res[0]
+        diseases = []
+        
         info = yolov5.detect(source=img)
-        print("接口同款 最终检测结果:", info)
-    else:
-        print("接口同款 最终会返回 results=3")
+        status = info[0]
+        diseases = info[1:]
+
+        print({"lightness": l, "saturation": saturation, "results": status, "diseases": diseases})
